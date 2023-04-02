@@ -1,0 +1,11 @@
+.router-link-exact-active {
+  font-weight: bold;
+}
+
+.btn-success {
+  background-color: #64e72b;
+}
+
+.breadcrumb-item.active {
+  font-weight: bold;
+}

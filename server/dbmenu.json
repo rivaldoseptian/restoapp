@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Ayam Bakar",
+    "imgUrl": "https://awsimages.detik.net.id/community/media/visual/2022/06/09/resep-ayam-bakar-bumbu-rujak.jpeg?w=1200",
+    "harga": 16000,
+    "status": "Available"
+  },
+  {
+    "name": "Ikan Nila Bakar",
+    "imgUrl": "https://img.inews.co.id/media/822/files/inews_new/2022/04/25/Nila_bakar.jpg",
+    "harga": 19000,
+    "status": "Available"
+  },
+  {
+    "name": "Pepes Ikan Mas",
+    "imgUrl": "https://selerasa.com/wp-content/uploads/2015/06/images_ikan_Ikan_gurame_pepes-bakar-ikan-gurame.JPG",
+    "harga": 16000,
+    "status": "Available"
+  },
+  {
+    "name": "Kopi Susu",
+    "imgUrl": "https://akcdn.detik.net.id/visual/2020/03/17/b72309d4-d7f9-4fcb-ad6e-12fab3998295_11.jpeg?w=480&q=90",
+    "harga": 10000,
+    "status": "Available"
+  },
+  {
+    "name": "Kopi Late",
+    "imgUrl": "https://ds393qgzrxwzn.cloudfront.net/resize/c500x500/cat1/img/images/0/emYCOwqtNF.jpg",
+    "harga": 15000,
+    "status": "Available"
+  },
+  {
+    "name": "Teh Obenk",
+    "imgUrl": "https://assets.ayobandung.com/crop/320x221:1166x893/750x500/webp/photo/2023/01/07/1249686327.png",
+    "harga": 6000,
+    "status": "Available"
+  },
+  {
+    "name": "Ayam Kremes",
+    "imgUrl": "https://img-global.cpcdn.com/recipes/2d73965fe4cb091b/1200x630cq70/photo.jpg",
+    "harga": 12000,
+    "status": "Available"
+  },
+  {
+    "name": "Lele Goreng",
+    "imgUrl": "https://kbu-cdn.com/dk/wp-content/uploads/lele-goreng-bumbu-lengkuas.jpg",
+    "harga": 12000,
+    "status": "Available"
+  },
+  {
+    "name": "Ayam goreng",
+    "imgUrl": "https://awsimages.detik.net.id/community/media/visual/2021/09/18/ilustrasi-ayam-goreng_43.jpeg?w=1200",
+    "harga": 16000,
+    "status": "Available"
+  },
+  {
+    "name": "Sate Ayam",
+    "imgUrl": "https://kbu-cdn.com/dk/wp-content/uploads/sate-ayam.jpg",
+    "harga": 18000,
+    "status": "Available"
+  },
+  {
+    "name": "Opor Ayam",
+    "imgUrl": "https://bacaini.id/wp-content/uploads/2021/05/resep-opor-ayam-bumbu-kuning.jpg",
+    "harga": 15000,
+    "status": "Available"
+  },
+  {
+    "name": "Hati Goreng",
+    "imgUrl": "https://cdn-2.tstatic.net/kaltim/foto/bank/images/resep-hati-ampela-goreng-bumbu-gurih.jpg",
+    "harga": 10000,
+    "status": "Available"
+  },
+  {
+    "name": "Teh Tarik",
+    "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKzN692cTVifDR-N_L5NgZMQ_Y1eWjtXoblA&usqp=CAU",
+    "harga": 7000,
+    "status": "Available"
+  },
+  {
+    "name": "Ayam Lada Hitam",
+    "imgUrl": "https://cdn-brilio-net.akamaized.net/news/2021/06/29/208824/1506232-ayam-lada-hitam.jpg",
+    "harga": 15000,
+    "status": "Available"
+  },
+  {
+    "name": "Ayam Kecap",
+    "imgUrl": "https://asset.kompas.com/crops/PFeY6w7PoVNoSuU-w21zaVY4Fw4=/0x0:999x666/780x390/data/photo/2020/07/22/5f179e22a9a39.jpg",
+    "harga": 12000,
+    "status": "Available"
+  }
+]

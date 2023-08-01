@@ -6,7 +6,7 @@ export default {
   data() {
     return {
       inputUpdate: {
-        order: '',
+        order: '1',
         keterangan: ''
       }
     }

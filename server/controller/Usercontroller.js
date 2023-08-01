@@ -89,7 +89,7 @@ class UserController {
       let MailGenerator = new Mailgen({
         theme: "default",
         product: {
-          name: "Mailgen",
+          name: "Resto App",
           link: "https://mailgen.js",
         },
       });
@@ -106,7 +106,7 @@ class UserController {
       let message = {
         from: "ibel.hebat123@gmail.com",
         to: payload.email,
-        subject: "-",
+        subject: "Terimakasih Telah menggunakan website kami",
         html: mail,
       };
 

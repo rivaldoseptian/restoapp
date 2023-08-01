@@ -15,8 +15,14 @@ export default {
     }
   },
   methods: {
-    ...mapActions(useMenuStore, ['getOrder', 'paymentGateWay', 'orderCheckout'])
+    ...mapActions(useMenuStore, ['getOrder', 'paymentGateWay', 'orderCheckout']),
+    proceedToPayment() {
+      //   this.paymentGateWay()
+      const totalHarga = this.totalHarga
+      this.paymentGateWay(totalHarga)
+    }
   },
+
   created() {
     this.getOrder()
   }
@@ -75,12 +81,12 @@ export default {
                 <tr>
                   <td colspan="6" align="right">
                     <router-link to="/home" class="btn btn-success" @click.prevent="orderCheckout"
-                      >CheckOut</router-link
+                      >Cash Pay</router-link
                     >
                   </td>
                   <td>
-                    <a href="#" class="btn btn-primary" @click.prevent="paymentGateWay()"
-                      >Pay Now</a
+                    <a href="#" class="btn btn-primary" @click.prevent="proceedToPayment"
+                      >Credit Pay</a
                     >
                   </td>
                 </tr>

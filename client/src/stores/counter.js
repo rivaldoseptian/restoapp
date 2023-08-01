@@ -3,8 +3,8 @@ import axios from 'axios'
 
 export const useMenuStore = defineStore('counter', {
   state: () => ({
-    baseUrl: 'http://localhost:3000',
-    // baseUrl: 'https://websitemenu-production.up.railway.app',
+    // baseUrl: 'http://localhost:3000',
+    baseUrl: 'https://known-activity-production.up.railway.app',
     access_token: localStorage.access_token,
     menus: [],
     orders: [],
@@ -97,6 +97,13 @@ export const useMenuStore = defineStore('counter', {
     logOut() {
       localStorage.clear()
       this.access_token = null
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Succes LogOut',
+        showConfirmButton: false,
+        timer: 1500
+      })
     },
     async registerHandler(inputRegister) {
       try {
@@ -175,13 +182,17 @@ export const useMenuStore = defineStore('counter', {
       }
     },
 
-    async paymentGateWay() {
+    async paymentGateWay(totalHarga) {
       try {
+        console.log(totalHarga)
         const { data } = await axios({
           url: this.baseUrl + '/pub/generate-midtrans-token',
           method: 'POST',
           headers: {
             access_token: this.access_token
+          },
+          data: {
+            harga: totalHarga
           }
         })
 

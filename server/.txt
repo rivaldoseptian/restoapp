@@ -2,3 +2,4 @@ postgresql://postgres:amburadul654321@db.igpcudmpylyqpfuybuda.supabase.co:5432/p
 
 restomenuwebsite-production.up.railway.app
 postgresql://postgres:Amburadul654321@db.jgrnrlvxjgstftyyrrgx.supabase.co:5432/postgres
+postgresql://postgres:[YOUR-PASSWORD]@db.jgrnrlvxjgstftyyrrgx.supabase.co:5432/postgres

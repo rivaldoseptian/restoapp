@@ -14,6 +14,10 @@ module.exports = (error, req, res, next) => {
       status = 401;
       message = "Unauthenticated";
       break;
+    case "Min 1 Order":
+      status = 400;
+      message = "Min 1 Order";
+      break;
     case "Email/Password Required":
       status = 400;
       message = "Email/Password required";

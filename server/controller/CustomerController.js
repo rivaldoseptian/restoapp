@@ -23,8 +23,8 @@ class CustomerController {
       const MenuId = req.params.MenuId;
       const UserId = req.user.id;
 
-      const order = await Order.create({ MenuId, UserId });
-      res.status(201).json(order);
+      const orders = await Order.create({ MenuId, UserId });
+      res.status(201).json(orders);
     } catch (error) {
       console.log(error);
       next(error);
@@ -46,10 +46,18 @@ class CustomerController {
       const id = req.params.MenuId;
       if (!id) throw { name: "Not Found" };
       const { order, keterangan } = req.body;
+
+      if (order === 0 || !order) {
+        const orders = await Order.update(
+          { order: 1, keterangan },
+          { where: { MenuId: id } }
+        );
+      }
       const orders = await Order.update(
         { order, keterangan },
         { where: { MenuId: id } }
       );
+
       res.status(201).json({ message: "Succes Update Order" });
     } catch (error) {
       console.log(error);
@@ -59,6 +67,8 @@ class CustomerController {
 
   static async generateMidtransToken(req, res, next) {
     try {
+      const price = req.body.harga;
+      console.log(price);
       const findUser = await User.findByPk(req.user.id);
 
       let snap = new midtransClient.Snap({
@@ -69,7 +79,7 @@ class CustomerController {
       let parameter = {
         transaction_details: {
           order_id: "ORDERID_" + Math.floor(100000 + Math.random() * 900000),
-          gross_amount: 100000,
+          gross_amount: price,
         },
         credit_card: {
           secure: true,
